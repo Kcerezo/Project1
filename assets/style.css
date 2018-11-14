@@ -1,0 +1,269 @@
+body, html {
+  height: 100%;
+  
+}
+
+.google{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.parallax1 { 
+
+  /* The image used */
+  background-image: url("../images/background.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Full height */
+
+  height: 100%; 
+  margin-top: 0px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imageBackground{
+  background-image: url("../images/bottles.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+ } 
+
+.search-div {
+  background-color: lightgrey;
+  padding: 25px;
+  border-radius: 5%;
+  opacity: .9;
+}
+
+
+h1{
+  text-align: center;
+
+}
+
+.jumbotron1 {
+  background-image: url('http://getwallpapers.com/wallpaper/full/2/6/d/960991-backgrounds-green-1920x1200-tablet.jpg')
+}
+
+
+
+.footer1{
+  background-image: url('http://getwallpapers.com/wallpaper/full/2/6/d/960991-backgrounds-green-1920x1200-tablet.jpg')
+}
+
+
+/* css for social buttons */
+
+
+/*  hamburger   */
+
+.open {
+position: fixed;
+top: 40px;
+right: 40px;
+width: 50px;
+height: 50px;
+display: block;
+cursor: pointer;
+transition: opacity 0.2s linear;
+}
+
+.open:hover { opacity: 0.8; }
+
+.open span {
+
+display: block;
+float: left;
+clear: both;
+height: 4px;
+width: 40px;
+border-radius: 40px;
+background-color: #fff;
+position: absolute;
+right: 3px;
+top: 3px;
+overflow: hidden;
+transition: all 0.4s ease;
+}
+
+.open span:nth-child(1) {
+margin-top: 10px;
+z-index: 9;
+}
+
+
+.open span:nth-child(2) { margin-top: 25px; }
+
+.open span:nth-child(3) { margin-top: 40px; }
+
+.sub-menu {
+transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+height: 0;
+width: 0;
+right: 0;
+top: 0;
+position: absolute;
+background-color: rgba(105, 106, 107, 0.54);
+border-radius: 50%;
+z-index: 18;
+overflow: hidden;
+}
+.sub-menu li {
+display: block;
+float: right;
+clear: both;
+height: auto;
+margin-right: -160px;
+transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sub-menu li:first-child { margin-top: 180px; }
+
+.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
+
+.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
+
+.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
+
+.sub-menu li:nth-child(4) { -webkit-transition-delay: 0.20s; }
+
+.sub-menu li:nth-child(5) { -webkit-transition-delay: 0.25s; }
+
+.sub-menu li a {
+color: #fff;
+font-family: 'Lato', Arial, Helvetica, sans-serif;
+font-size: 16px;
+width: 100%;
+display: block;
+float: left;
+line-height: 40px;
+}
+.oppenned .sub-menu {
+
+opacity: 1;
+height: 400px;
+width: 400px;
+}
+.oppenned span:nth-child(2) { overflow: visible; }
+.oppenned span:nth-child(1),
+
+.oppenned span:nth-child(3) {
+
+z-index: 100;
+
+transform: rotate(45deg);
+
+}
+
+
+.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(12px) translateX(12px); }
+
+
+.oppenned span:nth-child(2) {
+height: 400px;
+width: 400px;
+right: -160px;
+top: -160px;
+border-radius: 50%;
+
+background-color: rgba(7, 161, 45, 0.54);
+
+}
+
+.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-10px) translateX(10px); }
+.oppenned li { margin-right: 168px; }
+
+
+
+body {
+  margin: 0;
+  background-color: rgb(158, 155, 152);
+  font-family: 'Raleway Dots', sans-serif;
+}
+
+
+section #services {
+  text-align: center;
+  transform: translatez(0);
+}
+section #services h2 {
+  margin: 80px 0px 40px;
+  color: #fff;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  text-align: center;
+}
+section #services li {
+  width: 120px;
+  height: 140px;
+  display: inline-block;
+  margin: 20px;
+  list-style: none;
+}
+section #services li div {
+  width: 120px;
+  height: 120px;
+  color: #74d4b3;
+  font-size: 3.4em;
+  text-align: center;
+  line-height: 120px;
+  background-color: rgb(148, 139, 139);
+  transition: all 0.5s ease;
+}
+section #services li a {
+  color: rgb(15, 110, 47);
+}
+section #services li div:hover {
+  transform: rotate(360deg);
+  border-radius: 100px;
+}
+section #services li span {
+  width: 120px;
+  height: 20px;
+  display: block;
+  padding: 15px 0px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 768px){
+  .max-width{
+      max-width: 100px;
+      height: 100px;
+  }
+
+  .font-size{
+      font-size: 20%;
+  }
+  .max-width{
+      display: none;
+  }
+  .hide{
+    display: none;
+  }
+
+ .page{
+  background-image: url("../images/bottles.jpg");
+  height: 100%; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ } 
+
+
+}

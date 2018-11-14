@@ -1,0 +1,109 @@
+body, html {
+    height: 100%;
+    
+}
+
+
+.parallax2 { 
+
+    background-image: url("../images/gray.svg");
+    height: 100%; 
+    margin-top: -50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 195%;
+}
+
+.parallax3 { 
+  
+    background-image: url("../images/bar.jpg");
+    height: 100%; 
+    margin-top: -50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.parallax4 { 
+    background-image: url("../images/beer2.jpg");
+    height: 100%; 
+    margin-top: -50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h2{
+    font-family: 'Hanalei Fill', cursive;
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+}
+
+
+/* .jumbotron {
+    padding: 0px;
+    margin: 0px;
+    text-justify: inherit;
+} */
+
+.columns {
+    column-count: 2;
+    column-gap: 25px;
+    column-rule: 1px solid #454545;
+    
+  }
+
+  form{
+    text-align: center;
+    padding:10px;
+    margin:20px;
+  }
+
+  .card-title{
+    padding:10px;
+    margin:20px;
+  }
+
+  .scroll {
+      overflow-y: scroll;
+      height: 150px;
+  }
+
+  
+
+
+  @media screen and (max-width: 768px){
+    .max-width{
+        max-width: 100px;
+        height: 100px;
+    }
+
+    .font-size{
+        font-size: 20%;
+    }
+    .max-width{
+        display: none;
+    }
+    .hide{
+      display: none;
+    }
+
+   .page{
+    background-image: url("../images/bottles.jpg");
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   } 
+
+}
